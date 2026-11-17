@@ -1,0 +1,31 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             Sale_Price   R-squared:                       0.884
+Model:                            OLS   Adj. R-squared:                  0.880
+Method:                 Least Squares   F-statistic:                     246.4
+Date:                Mon, 16 Nov 2026   Prob (F-statistic):           9.09e-74
+Time:                        22:10:37   Log-Likelihood:                -1557.0
+No. Observations:                 168   AIC:                             3126.
+Df Residuals:                     162   BIC:                             3145.
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+======================================================================================
+                         coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+Intercept           2.294e+04   1094.501     20.963      0.000    2.08e+04    2.51e+04
+C(Accident)[T.yes] -2349.9833    469.022     -5.010      0.000   -3276.168   -1423.799
+Mileage_K            -71.5852     13.554     -5.282      0.000     -98.350     -44.821
+Age_Years          -1355.0563    180.849     -7.493      0.000   -1712.182    -997.931
+Horsepower            73.1850      4.830     15.151      0.000      63.646      82.724
+Num_Owners          -438.7710    363.276     -1.208      0.229   -1156.138     278.596
+==============================================================================
+Omnibus:                        1.503   Durbin-Watson:                   2.161
+Prob(Omnibus):                  0.472   Jarque-Bera (JB):                1.166
+Skew:                          -0.007   Prob(JB):                        0.558
+Kurtosis:                       3.408   Cond. No.                     1.17e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.17e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
